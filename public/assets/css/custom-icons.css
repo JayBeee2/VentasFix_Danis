@@ -1,0 +1,46 @@
+/* Definición de iconos personalizados usando emoji como fallback */
+.ti-eye:before {
+    content: "👁️";
+}
+.ti-pencil:before {
+    content: "✏️";
+}
+.ti-trash:before {
+    content: "🗑️";
+}
+.ti-plus:before {
+    content: "+";
+}
+.ti-alert-circle:before {
+    content: "⚠️";
+}
+.ti-check-circle:before {
+    content: "✅";
+}
+
+/* Estilos para los botones de acción */
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-icon i {
+    font-size: 1.25rem;
+}
+
+.btn-icon:hover {
+    background-color: rgba(115, 103, 240, 0.15);
+    color: #7367f0;
+}
+
+/* Asegurar que la familia de fuentes se aplique */
+.ti {
+    font-family: 'tabler-icons', sans-serif !important;
+    line-height: 1;
+    display: inline-block;
+}

@@ -1,0 +1,109 @@
+/* Definiciones de respaldo para iconos de Tabler Icons */
+
+/* Icono de ojo (ver) */
+.ti-eye:before {
+    content: "\e900";
+    font-family: "tabler-icons", sans-serif;
+}
+
+/* Icono de lápiz (editar) */
+.ti-pencil:before {
+    content: "\e901";
+    font-family: "tabler-icons", sans-serif;
+}
+
+/* Icono de papelera (eliminar) */
+.ti-trash:before {
+    content: "\e902";
+    font-family: "tabler-icons", sans-serif;
+}
+
+/* Icono de alerta */
+.ti-alert-circle:before {
+    content: "\e903";
+    font-family: "tabler-icons", sans-serif;
+}
+
+/* Icono de check/marca */
+.ti-check-circle:before {
+    content: "\e904";
+    font-family: "tabler-icons", sans-serif;
+}
+
+/* Icono de más (agregar) */
+.ti-plus:before {
+    content: "\e905";
+    font-family: "tabler-icons", sans-serif;
+}
+
+/* Respaldo mediante CSS cuando los iconos no cargan */
+.btn-icon .ti-eye, 
+.ti-eye.text-secondary {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+}
+
+.btn-icon .ti-eye:after,
+.ti-eye.text-secondary:after {
+    content: "👁️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+}
+
+.btn-icon .ti-pencil,
+.ti-pencil.text-secondary {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+}
+
+.btn-icon .ti-pencil:after,
+.ti-pencil.text-secondary:after {
+    content: "✏️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+}
+
+.btn-icon .ti-trash,
+.ti-trash.text-secondary {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+}
+
+.btn-icon .ti-trash:after,
+.ti-trash.text-secondary:after {
+    content: "🗑️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+}
+
+/* Correciones específicas para la vista de usuarios */
+.btn-link .ti-trash {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+}
+
+.btn-link .ti-trash:after {
+    content: "🗑️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+} 
